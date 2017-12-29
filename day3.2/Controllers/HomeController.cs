@@ -1,4 +1,5 @@
-﻿using System;
+﻿using day3._2.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +19,15 @@ namespace day3._2.Controllers
         public ActionResult ThankYou()
         {
             return View();
+        }
+
+        public ActionResult GetDetails()
+        {
+            EmployeeDeptViewModel myVariable = new EmployeeDeptViewModel()
+            {
+                firstName = "Musaddiq", lastName = "Siddiqui", deptId = 2, deptName = "Financial Services"
+        };
+            return View(myVariable);
         }
     }
 }

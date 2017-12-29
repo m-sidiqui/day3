@@ -1,0 +1,50 @@
+﻿@model day3._2.ViewModel.EmployeeDeptViewModel
+
+@{
+    ViewBag.Title = "GetDetails";
+}
+
+<h2>GetDetails</h2>
+
+<div>
+    <h4>EmployeeDeptViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deptId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deptId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deptName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deptName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
