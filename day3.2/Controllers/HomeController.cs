@@ -12,6 +12,7 @@ namespace day3._2.Controllers
         public ActionResult Index(string id)
         {
             TempData["siddiqui"] = id;
+            TempData.Keep("siddiqui");
             return View();
         }
         public ActionResult ThankYou()
